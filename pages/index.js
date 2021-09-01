@@ -1,20 +1,20 @@
 import { background, Button, ButtonGroup } from "@chakra-ui/react"
 import { Alert, AlertIcon, AlertTitle, AlertDescription} from "@chakra-ui/react"
-import { Heading,Wrap, WrapItem,Center,Link } from "@chakra-ui/react"
+import { Heading,Wrap, WrapItem,Center,Link,Badge  } from "@chakra-ui/react"
 import { Avatar, AvatarBadge, AvatarGroup,Box,Text,Stack, HStack, VStack,Flex, Spacer,Circle,IconButton} from "@chakra-ui/react"
-
 import{FaFacebookF,FaInstagram,FaTwitter,FaRegHandPaper,FaSnapchatGhost,FaReddit,FaStrava, FaLinkedin, FaGithub}from"react-icons/fa"
 
 export default function Home() {
   return (
     <div >
 
+    {/* AVATAR BOX */}
     <Center>
   {/* Below is avatar */}
     <warp align="center">
-  <Box boxShadow="" border="2px" p="6" borderRadius="3xl" bg="black" color="white" m={5}>
+  <Box border="2px" p="3" borderRadius="3xl" bg="black" color="white" m={5}>
   <Avatar size="lg"  />
-  <Text fontSize="xl" p={3}><b>Parth Karandikar</b></Text>
+  <Text fontSize="xl" p={3}><b>Parth Karandikar</b> <Badge ml="1" colorScheme="green"> DEV </Badge></Text>
   <Text fontSize="md" p={2}>⚡Connect with me on</Text>
 
       {/* Below is links */} 
@@ -38,20 +38,14 @@ export default function Home() {
       <Link href="https://www.reddit.com/user/TechnicalArachnid685" >  
   <IconButton borderRadius="2xl" size="md" variant="outline" colorScheme="white" icon={<FaReddit />} ></IconButton>
    </Link>
+   <Link href="https://www.clubhouse.com/@partheist" >  
+  <IconButton borderRadius="2xl" size="md" variant="outline" colorScheme="white"><p>👋</p></IconButton>
+   </Link>
    </HStack> 
 
       <hr></hr>
 
-      <Text mt={18}>🏃‍♂️Athletics</Text>
-      <HStack>
-      <Link href="https://www.strava.com/athletes/66256529" > 
-  <IconButton borderRadius="2xl" size="md" variant="outline" colorScheme="white" icon={<FaStrava />} ></IconButton>       
-  </Link>
-      </HStack>
-
-      <hr></hr>    
-
-      <Text mt={18}>💼Office</Text>
+      <Text mt={18}>💼Work</Text>
       <HStack>
      
       <Link href="https://www.linkedin.com/in/parth-karandikar-672a01205/" > 
@@ -59,19 +53,17 @@ export default function Home() {
       </Link>
 
       <Link href="https://github.com/ParthKarandikar" > 
-      <IconButton borderRadius="2xl" size="md" colorScheme="red" variant="outline" icon={<FaGithub />} ></IconButton>       
+      <IconButton borderRadius="2xl" size="md" variant="outline" colorScheme="white" icon={<FaGithub />} ></IconButton>       
       </Link>
     
     </HStack>
-  
   </VStack>
-
 
 </Box>
 </warp>
    </Center>
-    
-    
+
+  
     </div>
   )
 } 
