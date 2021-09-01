@@ -59,7 +59,7 @@ export default function Home() {
       </Link>
 
       <Link href="https://github.com/ParthKarandikar" > 
-      <IconButton borderRadius="2xl" size="md" colorScheme="red" variant="outline" colorScheme="white" icon={<FaGithub />} ></IconButton>       
+      <IconButton borderRadius="2xl" size="md" colorScheme="red" variant="outline" icon={<FaGithub />} ></IconButton>       
       </Link>
     
     </HStack>
