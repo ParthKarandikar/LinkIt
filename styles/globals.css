@@ -1,4 +1,4 @@
-@import url("https://fontsource.org/fonts/metropolis");
+
 body {
   padding: 0;
   margin: 0;
@@ -13,7 +13,7 @@ a {
 }
 
 * {
-  font-family: "Metropolis";
+ 
   background-color: black;
   letter-spacing: -0.5px;
   box-sizing: border-box;
