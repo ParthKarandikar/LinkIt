@@ -51,11 +51,7 @@ export default function Home() {
       <Link href="https://www.linkedin.com/in/parth-karandikar-672a01205/" > 
       <IconButton borderRadius="2xl" size="md" variant="outline" colorScheme="white" icon={<FaLinkedin />} ></IconButton>       
       </Link>
-
-      <Link href="https://github.com/ParthKarandikar" > 
-      <IconButton borderRadius="2xl" size="md" variant="outline" colorScheme="white" icon={<FaGithub />} ></IconButton>       
-      </Link>
-    
+      
     </HStack>
   </VStack>
 
