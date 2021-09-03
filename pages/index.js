@@ -1,20 +1,22 @@
-import { background, Button, ButtonGroup } from "@chakra-ui/react"
-import { Alert, AlertIcon, AlertTitle, AlertDescription} from "@chakra-ui/react"
-import { Heading,Wrap, WrapItem,Center,Link,Badge  } from "@chakra-ui/react"
-import { Avatar, AvatarBadge, AvatarGroup,Box,Text,Stack, HStack, VStack,Flex, Spacer,Circle,IconButton} from "@chakra-ui/react"
-import{FaFacebookF,FaInstagram,FaTwitter,FaRegHandPaper,FaSnapchatGhost,FaReddit,FaStrava, FaLinkedin, FaGithub}from"react-icons/fa"
+import {  Alert, AlertIcon, AlertTitle, AlertDescription,Heading,Wrap, WrapItem,Center,Link,Badge,MdSettings,Switch,Avatar, AvatarBadge, 
+  AvatarGroup,Box,Text,Stack, HStack, VStack,Flex, Spacer,Circle,IconButton,background, Button, ButtonGroup,Container,useColorMode,Icon  } from "@chakra-ui/react"
+
+import{FaFacebookF,FaInstagram,FaTwitter,FaRegHandPaper,FaSnapchatGhost,FaReddit,FaStrava, FaLinkedin, FaGithub,FaSun,FaMoon}from"react-icons/fa"
+
+
 
 export default function Home() {
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <div >
 
-    <Alert status="warning"  variant="left-accent"> ⚠ Snapchat might stop soon due to inactivity </Alert>
     
-    {/* AVATAR BOX */}
+      <Alert status="warning"  variant="left-accent"> ⚠ Snapchat might stop soons </Alert>
+    {/* AVATAR BOX BELOW*/}
+     
     <Center>
-  {/* Below is avatar */}
     <warp align="center">
-  <Box border="2px" p="3" borderRadius="3xl" bg="black" color="white" m={5}>
+  <Box border="2px" p="3" borderRadius="3xl" m={5}>
   <Avatar size="lg"  />
   <Text fontSize="xl" p={3}><b>Parth Karandikar</b> <Badge ml="1" colorScheme="green"> DEV </Badge></Text>
   <Text fontSize="md" p={2}>⚡Connect with me on</Text>
@@ -61,7 +63,17 @@ export default function Home() {
 </warp>
    </Center>
 
-  
-    </div>
+    {/* DARK MODE TOGGLE */}
+    <Center>
+    <Box >
+     <HStack>
+    <Button size="sm" borderRadius="md" p={5} rightIcon={colorMode === "light" ? <FaSun /> : <FaMoon />} onClick={toggleColorMode}> 
+    Toggle
+    </Button>
+    </HStack> 
+    </Box > 
+    
+    </Center>
+ </div>
   )
 } 
