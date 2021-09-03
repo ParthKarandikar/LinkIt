@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div >
 
-    <Alert status="warning"  variant="left-accent"> ⚠ Snapchat might stop soons </Alert>
+    <Alert status="warning"  variant="left-accent"> ⚠ Snapchat might stop soon due to inactivity </Alert>
     
     {/* AVATAR BOX */}
     <Center>
