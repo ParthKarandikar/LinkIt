@@ -11,9 +11,8 @@ export default function Home() {
     <div >
 
     
-      <Alert status="warning"  variant="left-accent"> ⚠ Snapchat might stop soons </Alert>
-    {/* AVATAR BOX BELOW*/}
      
+    {/* AVATAR BOX BELOW*/}
     <Center>
     <warp align="center">
   <Box border="2px" p="3" borderRadius="3xl" m={5}>
@@ -30,18 +29,15 @@ export default function Home() {
       <Link href="https://www.facebook.com/parth.karandikar.94/" >  
   <IconButton borderRadius="2xl" size="md" variant="outline" colorScheme="white" icon={<FaFacebookF />} ></IconButton>    
  </Link>  
+      
       <Link href="https://www.instagram.com/__partheist/" >  
   <IconButton borderRadius="2xl" size="md" variant="outline" colorScheme="white" icon={<FaInstagram />} ></IconButton>    
  </Link>
+      
       <Link href="https://twitter.com/theparteist" >  
   <IconButton borderRadius="2xl" size="md" variant="outline" colorScheme="white" icon={<FaTwitter />} ></IconButton>      
- </Link>
-      <Link href="https://www.snapchat.com/add/parthk_7?share_id=tXDiCTsQZnM" >
-  <IconButton borderRadius="2xl" size="md" variant="outline" colorScheme="white" icon={<FaSnapchatGhost />}></IconButton> 
-  </Link>
-      <Link href="https://www.reddit.com/user/TechnicalArachnid685" >  
-  <IconButton borderRadius="2xl" size="md" variant="outline" colorScheme="white" icon={<FaReddit />} ></IconButton>
-   </Link>
+ </Link> 
+  
    <Link href="https://www.clubhouse.com/@partheist" >  
   <IconButton borderRadius="2xl" size="md" variant="outline" colorScheme="white"><p>👋</p></IconButton>
    </Link>
@@ -74,6 +70,7 @@ export default function Home() {
     </Box > 
     
     </Center>
+ 
  </div>
   )
 } 
