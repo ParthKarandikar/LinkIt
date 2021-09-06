@@ -10,7 +10,18 @@ export default function Home() {
   return (
     <div >
 
+{/* DARK MODE TOGGLE */}
+
+<Center>
+    <Box >
+     <HStack>
+    <Button size="sm" borderRadius="md" variant="ghost" p={5} m={5} leftIcon={colorMode === "light" ? <FaSun /> : <FaMoon />} onClick={toggleColorMode}> Modes
+    </Button>
+    </HStack> 
+    </Box > 
     
+    </Center>
+ 
      
     {/* AVATAR BOX BELOW*/}
     <Center>
@@ -59,18 +70,7 @@ export default function Home() {
 </warp>
    </Center>
 
-    {/* DARK MODE TOGGLE */}
-    <Center>
-    <Box >
-     <HStack>
-    <Button size="sm" borderRadius="md" p={5} rightIcon={colorMode === "light" ? <FaSun /> : <FaMoon />} onClick={toggleColorMode}> 
-    Toggle
-    </Button>
-    </HStack> 
-    </Box > 
     
-    </Center>
- 
  </div>
   )
 } 
