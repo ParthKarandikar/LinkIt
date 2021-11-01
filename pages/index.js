@@ -28,7 +28,7 @@ export default function Home() {
     <warp align="center">
   <Box border="2px" p="3" borderRadius="3xl" m={5}>
   <Avatar size="lg"  />
-  <Text fontSize="xl" p={3}><b>Parth Karandikar</b> <Badge ml="1" colorScheme="green"> DEV </Badge></Text>
+  <Text fontSize="xl" p={3}><b>Parth Karandikar</b> 
   <Text fontSize="md" p={2}>⚡Connect with me on</Text>
 
       {/* Below is links */} 
